@@ -7,15 +7,15 @@ describe("testing Employee Class", () => {
     const name = "Ana";
     const id = 77;
     const email = "ana@ana.com";
-   const roll = "Employee";
+   const role = "Employee";
     // crate a case
-    const employee = new Employee(name, id, email, roll);
+    const employee = new Employee(name, id, email, role);
 
     // make assertion
     expect(employee.name).toBe(name);
     expect(employee.id).toBe(id);
     expect(employee.email).toBe(email);
-    expect(employee.roll).toBe("Employee");
+    expect(employee.role).toBe("Employee");
    
   });
 

@@ -8,15 +8,15 @@ describe("testing Manager Class", () => {
     const id = 77;
     const email = "ana@ana.com";
     const officeNumber = "7";
-    const roll = "Manager"
+    const role = "Manager"
     // crate a case
-    const manager = new Manager(name, id, email, officeNumber);
+    const manager = new Manager(name, id, email, officeNumber,role);
 
     // make assertion
     expect(manager.name).toBe(name);
     expect(manager.id).toBe(id);
     expect(manager.email).toBe(email);
     expect(manager.officeNum).toBe(officeNumber);
-    expect(employee.roll).toBe("Manager");
+    expect(employee.role).toBe("Manager");
   });
 });
