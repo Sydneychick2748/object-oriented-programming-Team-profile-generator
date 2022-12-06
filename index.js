@@ -5,10 +5,9 @@ const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 
 // Import HTML templates
-const generateTemplate = require("./src/generateTemplate");
-const generateManagerCard = require("./src/generateTemplate");
-const generateEngineerCard = require("./src/generateTemplate");
-const generateInternCard = require("./src/generateTemplate");
+const {generateTemplate, generateManagerCard, generateEngineerCard , generateInternCard} = require("./src/generateTemplate");
+
+
 
 // bring in the requirer
 const fs = require("fs");
@@ -22,7 +21,8 @@ const addManager = [
   {
     name: "role",
     type: "confirm",
-    message: "This is your team generator!!! Are you ready to make a Great Working Team?",
+    message:
+      "This is your team generator!!! Are you ready to make a Great Working Team?",
   },
   {
     name: "name",
@@ -120,11 +120,13 @@ function ask(questionArr) {
   inquirer
     .prompt(questionArr)
     .then((member) => {
+      console.log(member);
+
       employeeArray.push(member);
 
-      if (member.addMore === " Add Engineer") {
+      if (member.addMore === "Add Engineer") {
         ask(addEngineer);
-      } else if (member.addMore === " Add Intern") {
+      } else if (member.addMore === "Add Intern") {
         ask(addIntern);
       } else {
         createProfiles(employeeArray);
@@ -156,7 +158,7 @@ function createProfiles(employeeArray) {
       return new Intern(name, id, email, school);
     }
   });
-
+  console.table(profiles[0]);
   // Generate HTML from the profiles made
   generateHtml(profiles);
 }
