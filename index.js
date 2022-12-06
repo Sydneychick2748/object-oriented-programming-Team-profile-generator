@@ -25,21 +25,53 @@ const addManager = [
     name: "name",
     type: "input",
     message: "Please enter the name of the manager:",
+    validate: (usageInput) => {
+      if (usageInput) {
+        return true;
+      } else {
+        console.log("Please enter valid name?");
+        return false;
+      }
+    },
   },
   {
     name: "id",
     type: "input",
     message: "What is your employee ID?",
+    validate: (usageInput) => {
+      if (usageInput) {
+        return true;
+      } else {
+        console.log("Please enter valid ID?");
+        return false;
+      }
+    },
   },
   {
     name: "email",
     type: "input",
     message: "Please enter your email address:",
+    validate: (usageInput) => {
+      if (usageInput) {
+        return true;
+      } else {
+        console.log("Please enter valid intern email address?");
+        return false;
+      }
+    },
   },
   {
     name: "officeNumber",
     type: "input",
     message: "What is your office number?",
+    validate: (usageInput) => {
+      if (usageInput) {
+        return true;
+      } else {
+        console.log("Please enter valid number?");
+        return false;
+      }
+    },
   },
   {
     name: "addMore",
@@ -55,21 +87,53 @@ const addEngineer = [
     name: "name",
     type: "input",
     message: "Please enter the name of the engineer:",
+    validate: (usageInput) => {
+      if (usageInput) {
+        return true;
+      } else {
+        console.log("Please enter valid name?");
+        return false;
+      }
+    },
   },
   {
     name: "id",
     type: "input",
     message: "Please enter the ID of the engineer:",
+    validate: (usageInput) => {
+      if (usageInput) {
+        return true;
+      } else {
+        console.log("Please enter valid ID?");
+        return false;
+      }
+    },
   },
   {
     name: "email",
     type: "input",
     message: "What is the engineer's email address?",
+    validate: (usageInput) => {
+      if (usageInput) {
+        return true;
+      } else {
+        console.log("Please enter valid  email address?");
+        return false;
+      }
+    },
   },
   {
     name: "github",
     type: "input",
     message: "Please enter the engineer's Github username:",
+    validate: (usageInput) => {
+      if (usageInput) {
+        return true;
+      } else {
+        console.log("Please enter valid Github ?");
+        return false;
+      }
+    },
   },
   {
     name: "addMore",
@@ -85,21 +149,53 @@ const addIntern = [
     name: "name",
     type: "input",
     message: "What is the intern's name?",
+    validate: (usageInput) => {
+      if (usageInput) {
+        return true;
+      } else {
+        console.log("Please enter valid  name?");
+        return false;
+      }
+    },
   },
   {
     name: "id",
     type: "input",
     message: "What is the intern's employee ID?",
+    validate: (usageInput) => {
+      if (usageInput) {
+        return true;
+      } else {
+        console.log("Please enter valid  ID?");
+        return false;
+      }
+    },
   },
   {
     name: "email",
     type: "input",
     message: "Please enter the intern's email address:",
+    validate: (usageInput) => {
+      if (usageInput) {
+        return true;
+      } else {
+        console.log("Please enter valid email address?");
+        return false;
+      }
+    },
   },
   {
     name: "school",
     type: "input",
     message: "What college or university does the intern attend?",
+    validate: (usageInput) => {
+      if (usageInput) {
+        return true;
+      } else {
+        console.log("Please enter valid school?");
+        return false;
+      }
+    },
   },
   {
     name: "addMore",
