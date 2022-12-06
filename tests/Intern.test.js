@@ -17,6 +17,6 @@ describe("testing Intern Class", () => {
     expect(intern.id).toBe(id);
     expect(intern.email).toBe(email);
     expect(intern.school).toBe(school);
-    expect(intern.role).toBe("Intern");
+    expect(intern.getRole()).toBe("Intern");
   });
 });

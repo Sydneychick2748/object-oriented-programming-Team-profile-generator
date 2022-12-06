@@ -7,16 +7,16 @@ describe("testing Engineer Class", () => {
     const name = "Ana";
     const id = 77;
     const email = "ana@ana.com";
-    const gitHub = "github.com";
+    const github = "github.com";
     const role = "Engineer";
     // crate a case
-    const engineer = new Engineer(name, id, email, gitHub, role);
+    const engineer = new Engineer(name, id, email, github, role);
 
     // make assertion
     expect(engineer.name).toBe(name);
     expect(engineer.id).toBe(id);
     expect(engineer.email).toBe(email);
-    expect(engineer.gitHub).toBe(gitHub);
-    expect(engineer.role).toBe("Engineer");
+    expect(engineer.github).toBe(github);
+    expect(engineer.getRole()).toBe("Engineer");
   });
 });

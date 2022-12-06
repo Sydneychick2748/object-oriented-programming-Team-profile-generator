@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "quicksave": "git add . && git commit -m \"fixed our imports and exports\" && git push"
+    "test": "jest test",
+    "quicksave": "git add . && git commit -m \"\" && git push"
   },
   "repository": {
     "type": "git",

@@ -5,9 +5,12 @@ const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 
 // Import HTML templates
-const {generateTemplate, generateManagerCard, generateEngineerCard , generateInternCard} = require("./src/generateTemplate");
-
-
+const {
+  generateTemplate,
+  generateManagerCard,
+  generateEngineerCard,
+  generateInternCard,
+} = require("./src/generateTemplate");
 
 // bring in the requirer
 const fs = require("fs");
@@ -18,12 +21,6 @@ const employeeArray = [];
 
 // Add manager
 const addManager = [
-  {
-    name: "role",
-    type: "confirm",
-    message:
-      "This is your team generator!!! Are you ready to make a Great Working Team?",
-  },
   {
     name: "name",
     type: "input",
@@ -52,7 +49,7 @@ const addManager = [
   },
 ];
 
-// Add new engineer
+// Add  engineer
 const addEngineer = [
   {
     name: "name",
@@ -112,29 +109,6 @@ const addIntern = [
   },
 ];
 
-// Initialize application
-ask(addManager);
-
-//  questions if member needs to be added
-function ask(questionArr) {
-  inquirer
-    .prompt(questionArr)
-    .then((member) => {
-      console.log(member);
-
-      employeeArray.push(member);
-
-      if (member.addMore === "Add Engineer") {
-        ask(addEngineer);
-      } else if (member.addMore === "Add Intern") {
-        ask(addIntern);
-      } else {
-        createProfiles(employeeArray);
-      }
-    })
-    .catch((err) => console.log(err));
-}
-
 // create the team in the array
 function createProfiles(employeeArray) {
   const profiles = employeeArray.map((member) => {
@@ -163,6 +137,29 @@ function createProfiles(employeeArray) {
   generateHtml(profiles);
 }
 
+// Initialize application
+ask(addManager);
+
+//  questions  for if member needs to be added
+function ask(questionArr) {
+  inquirer
+    .prompt(questionArr)
+    .then((member) => {
+      console.log(member);
+
+      employeeArray.push(member);
+
+      if (member.addMore === "Add Engineer") {
+        ask(addEngineer);
+      } else if (member.addMore === "Add Intern") {
+        ask(addIntern);
+      } else {
+        createProfiles(employeeArray);
+      }
+    })
+    .catch((err) => console.log(err));
+}
+
 //   generating the profiles into the cards html
 function generateHtml(profiles) {
   let profileCards = "";
@@ -186,7 +183,7 @@ function generateHtml(profiles) {
 
 // Function to write the final HTML document in dist folder
 function writeHtml(newHtml) {
-  fs.writeFile("./dist/team-profile.html", newHtml, (err) => {
+  fs.writeFile("./dist/myTeamGenerated.html", newHtml, (err) => {
     if (err) throw err;
     console.log("HTML document successfully created in the /dist folder.");
   });

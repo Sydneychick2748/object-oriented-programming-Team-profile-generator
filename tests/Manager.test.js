@@ -16,7 +16,7 @@ describe("testing Manager Class", () => {
     expect(manager.name).toBe(name);
     expect(manager.id).toBe(id);
     expect(manager.email).toBe(email);
-    expect(manager.officeNum).toBe(officeNumber);
-    expect(employee.role).toBe("Manager");
+    expect(manager.officeNumber).toBe(officeNumber);
+    expect(manager.getRole()).toBe("Manager");
   });
 });
