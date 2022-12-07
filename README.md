@@ -1,11 +1,11 @@
 # object-oriented-programming-Team-profile-generator
 
 ## Description
- This webpage is designed  for a company who wants to build a software team with ease that is user friendly and the UI looks great also so the a manager of a team can have access to there teams basic info, emails and GitHub profiles quickly and easily
+ This webpage is designed for a company that wants to build a software team with ease that is user-friendly. The UI also looks excellent so that the team manager can have access to their teams' basic info, emails, and GitHub profiles quickly and easily.
 
-This website is built in  Node.js command-line application that takes in information and builds a team of employees.
+This website is built in Node.js command-line application that takes in information and creates a team of employees.
  
- This website is build with the use of OOP, Iqnuirer, Constructors and Classes(Among these were the Employee, Manager, Engineer, and Intern ) , also using using Jest for testing .The objective was to build a easy company team profile generator in  Node.js command-line application that takes in information about employees on a software engineering team, and with that information generates an HTML webpage that displays the user input data.
+ This website is built using OOP, Inquirer, Constructors, and Classes(Among these were the Employee, Manager, Engineer, and Intern ), also using Jest for testing. The objective was to build an easy company team profile generator in  Node.js command-line application that takes in information about employees on a software engineering team and, with that information, generates an HTML webpage that displays the user input data.
 
  
  
@@ -19,22 +19,25 @@ This website is built in  Node.js command-line application that takes in informa
 
 ## Installation 
 
- Start wit hmaking a reop in the github and then coling in the terminal then making folder and opening in the vs code .  When you start in vs code you must first use npm -y init to make your package-lock.json and node_modules. Then install npm jest and npm inuirer . When the package json is made , enter into the scrips and added :
+ Start making a repo in GitHub, then coding in the terminal, creating a folder, and opening it in vs code.  When you start in vs code, you must first use npm -y init to create your package-lock.json and node_modules. Then install npm jest and npm inquirer. When the package JSON is made, enter it into the scrips and added :
  "scripts": {
-    "test": "jest test",
+    "test": "jest test,"
     },
-  so when you want to run the test in the terminal you will use `npm run test` and when you want to start the making of the team you will use ` node index.js`. Then you will make a file system to run everything here is a list of folders and files :
- In the  vs code these are the files created : 
+  So when you want to run the test in the terminal, you will use `npm run test,` and when you want to start the making of the team, you will use ` node index.js`. Then you will make a file system to run everything. Here is a list of folders and files :
+ In the  vs. code, these are the files created : 
+      test:
 │   ├── Employee.test.js
 │   ├── Engineer.test.js
 │   ├── Intern.test.js
 │   └── Manager.test.js
-├── dist: index.html, styles.css and the output file that is created called myTeamGenerated.html     
+├── dist: index.html, styles.css, and the output file that is created called myTeamGenerated.html     
 ├── lib:  Employee.js, Engineer.js, Intern.js, Manager.js            
 ├── src:  generatetemplate.js              
 ├── .gitignore           
 ├── index.js              
-         
+
+
+
 
 ## Usage 
 
@@ -56,18 +59,26 @@ THEN I am prompted to enter the intern’s name, ID, email, and school, and I am
 WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 
-https://github.com/Sydneychick2748
 
 
-To see the video of how it run please visit here :
+
+<img width="1101" alt="image" src="https://user-images.githubusercontent.com/87034052/206081241-4a9b018f-0e5f-4fa3-b81c-a3632b9d1b39.png">
+
+
+
+
+To see the video of how it runs, please visit here: https://github.com/Sydneychick2748
+
 ## License 
-This project is unlicenced 
+This project is unlicensed. 
 
 ## Contributing 
-Contributors should go to my github for this repo at: https://github.com/Sydneychick2748/object-oriented-programming-Team-profile-generator
+Contributors should go to my GitHub for this repo at: https://github.com/Sydneychick2748/object-oriented-programming-Team-profile-generator
 
 ## Tests
 Run `npm run test` to run Jest for tests and `npm index.js` to start the questions to build the Team webpage. 
 
 ## Questions
-If you have any questions about this projects, please contact me directly at anabennett77@gmail.com You can view more of my projects at:https://github.com/Sydneychick2748
+If you have any questions about this project, please contact me at anabennett77@gmail.com. You can view more of my projects at:https://github.com/Sydneychick2748
+
+
