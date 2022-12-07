@@ -32,7 +32,7 @@ This website is built in Node.js command-line application that takes in informat
 │   └── Manager.test.js
 ├── dist: index.html, styles.css, and the output file that is created called myTeamGenerated.html     
 ├── lib:  Employee.js, Engineer.js, Intern.js, Manager.js            
-├── src:  generatetemplate.js              
+├── src:  generateTemplate.js              
 ├── .gitignore           
 ├── index.js              
 
