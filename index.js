@@ -171,6 +171,7 @@ const addIntern = [
       }
     },
   },
+
   {
     name: "email",
     type: "input",
