@@ -55,15 +55,19 @@ WHEN I select the intern option
 THEN I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu
 WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
+
+https://github.com/Sydneychick2748
+
+
 To see the video of how it run please visit here :
 ## License 
 This project is unlicenced 
 
 ## Contributing 
-Contributors should go to my github for this repo at:
+Contributors should go to my github for this repo at: https://github.com/Sydneychick2748/object-oriented-programming-Team-profile-generator
 
 ## Tests
 Run `npm run test` to run Jest for tests and `npm index.js` to start the questions to build the Team webpage. 
 
 ## Questions
-If you have any questions about this projects, please contact me directly at anabennett77@gmail.com You can view more of my projects at:
+If you have any questions about this projects, please contact me directly at anabennett77@gmail.com You can view more of my projects at:https://github.com/Sydneychick2748
