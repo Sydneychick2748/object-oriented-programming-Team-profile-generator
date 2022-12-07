@@ -84,7 +84,7 @@ THEN I exit the application, and the HTML is generated
 
 
 
-To see the video of how it runs, please visit here: *********************************
+To see the video of how it runs, please visit here: <iframe src="https://drive.google.com/file/d/1dFXTiI2ZTQfeHLzrN_70q5yTAG6ZQmB7/preview" width="640" height="480"></iframe>
 
 ## License 
 This project is unlicensed. 
