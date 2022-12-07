@@ -8,9 +8,9 @@ describe("testing Manager Class", () => {
     const id = 77;
     const email = "ana@ana.com";
     const officeNumber = "7";
-    const role = "Manager"
+    const role = "Manager";
     // crate a case
-    const manager = new Manager(name, id, email, officeNumber,role);
+    const manager = new Manager(name, id, email, officeNumber, role);
 
     // make assertion
     expect(manager.name).toBe(name);

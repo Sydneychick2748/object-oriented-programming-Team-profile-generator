@@ -1,7 +1,7 @@
 const Intern = require("../lib/Intern");
 
-//  this will generate the cards 
- const generateTemplate = (cards) => {
+//  this will generate the cards
+const generateTemplate = (cards) => {
   return ` <!DOCTYPE html>
   <html lang="en">
   
@@ -51,7 +51,7 @@ const Intern = require("../lib/Intern");
   </body>
   </html> `;
 };
- 
+
 // this will generate the manager
 const generateManagerCard = (profile) => {
   console.log(profile.getName());
@@ -126,7 +126,7 @@ const generateInternCard = (profile) => {
     </div>
   </div>`;
 };
-//  exports the functions 
+//  exports the functions
 module.exports = {
   generateTemplate,
   generateInternCard,
