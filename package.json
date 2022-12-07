@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest test",
-    "quicksave": "git add . && git commit -m \"\" && git push"
+    "test": "jest test"
   },
   "repository": {
     "type": "git",
